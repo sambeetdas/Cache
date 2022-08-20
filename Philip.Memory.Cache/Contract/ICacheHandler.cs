@@ -11,5 +11,6 @@ namespace Philip.Memory.Cache.Contract
     {
         Task<T> Get<T>(string cacheKey);
         Task Set<T>(string cacheKey, T cacheValue, OptionModel options);
+        Task<dynamic> GetAll();
     }
 }

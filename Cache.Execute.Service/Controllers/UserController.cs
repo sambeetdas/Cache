@@ -32,5 +32,12 @@ namespace Cache.Execute.Service.Controllers
             var result =  await _cache.Get<UserModel>(name.ToLower());
             return result;
         }
+
+        [HttpGet]
+        public async Task<List<UserModel>> GetAll()
+        {
+            var result = await _cache.GetAll();
+            return result;
+        }
     }
 }

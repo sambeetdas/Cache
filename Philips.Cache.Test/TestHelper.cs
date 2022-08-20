@@ -41,5 +41,15 @@ namespace Philips.Cache.Test
 
             return option;
         }
+
+        public static OptionModel GetOptionModel_AbsoluteExpiration(DateTime value)
+        {
+            OptionModel option = new OptionModel()
+            {
+                AbsoluteExpiration = value
+            };
+
+            return option;
+        }
     }
 }
