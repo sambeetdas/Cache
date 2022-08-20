@@ -34,7 +34,7 @@ namespace Cache.Execute.Service.Controllers
         }
 
         [HttpGet]
-        public async Task<List<UserModel>> GetAll()
+        public async Task<dynamic> GetAll()
         {
             var result = await _cache.GetAll();
             return result;
